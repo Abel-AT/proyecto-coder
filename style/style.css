@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body__pages {
+    background: #1f1e1e;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+.body__index {
+    background: #1f1e1e;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* ---------------------- Header --------------------- */
+
+.header__index {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff1a;
+}
+
+/* ---------------------- Header Media --------------------- */
+
+@media (max-width: 786px) {
+    .header__index {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 651px) {
+    .header__nav--ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ---------------------- Header Nav --------------------- */
+
+.header__nav--ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 0;
+    list-style: none;
+    margin: 0;
+    margin-right: 1.5em;
+}
+
+.header__nav--li {
+    padding-right: 1.5em;
+}
+
+.header__nav--li a {
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #dbdbdb;
+}
+
+.header__nav--li a:hover {
+    color: #ffffff;
+}
+
+.header__nav--li i {
+    font-size: 1.5em;
+    color: #dbdbdb;
+}
+
+.header__nav--li i:hover {
+    filter: drop-shadow(0 0 5px #ffffff);
+    transition: all 0.2s ease-in-out;
+}
+
+/* ---------------------- Header Logo --------------------- */
+
+.container__logo {
+    margin-left: 1.5em;
+}
+
+.container__logo img{
+    width: 5em;
+    height: 5em;
+}
+
+
+/* ---------------------- WHATSAPP --------------------- */
+
+.whatsapp {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    z-index: 2000;
+}
+
+.img_whatsapp {
+    height: 3em;
+    width: 3em;
+}
+
+.img_whatsapp:hover {
+    filter: drop-shadow(0 0 10px rgba(15, 209, 15, 0.685));
+}
+
+/* ---------------------- Hero Section --------------------- */
+
+.hero__section {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.div__hero_section {
+    max-width: 50%;
+    margin-left: 1.5em;
+}
+
+.h1__hero {
+    font-size: 2.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #cacaca;
+    letter-spacing: .1em;
+}
+
+
+/* ---------------------- Section Presentacion --------------------- */
+
+.presentacion__section {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.div__presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+}
+
+.text__presentacion {
+    text-align: center;
+}
+
+.text__presentacion h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.text__presentacion h2::after {
+    content: " ?";
+    color: #d4d4d4;
+}
+
+.text__presentacion h2::before {
+    content: "¿ ";
+    color: #d4d4d4;
+}
+
+.text__presentacion p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 1em 0;
+}
+
+.img__presentacion  {
+    max-width: 55em;
+    margin: 1em 0 3.5em 0;
+}
+
+.img__presentacion img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 20px 0 #000000;
+    border-radius: 0.2em;
+}
+
+
+/* ---------------------- Footer --------------------- */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0;
+    border-top: .2em solid #ffffff83;
+    background: #001d6b28;
+}
+
+.ul__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-right: 2em;
+}
+
+.li__footer {
+    list-style: none;
+    padding: 1em;
+}
+
+.a__footer img {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.text__footer {
+    margin-left: 2em;
+    text-align: center;
+}
+
+.instagram:hover {
+    filter: drop-shadow(0 0 10px rgba(255, 105, 135, 0.6));
+    transition: all 0.3s ease;
+}
+
+.facebook:hover {
+    filter: drop-shadow(0 0px 10px rgb(7, 30, 236));
+    transition: all 0.3s ease;
+}
+
+.linkedin:hover {
+    filter: drop-shadow(0 0px 10px rgba(19, 63, 185, 0.6));
+    transition: all 0.3s ease;
+}
+
+/* ---------------------- Footer Media --------------------- */
+
+@media (max-width: 786px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .text__footer {
+        margin: 0;
+    }
+}
