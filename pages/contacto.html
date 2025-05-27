@@ -23,6 +23,85 @@
             </ul>
         </nav>
     </header>
+    <div id="container__navbar-bt">
+        <nav id="nav__bar__color" class="navbar bg-body-tertiary fixed-top color__navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="img" src="../img/Logo_moto.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./rutas.html">Rutas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./comida.html">Donde Comer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./repuestos.html">Repuestos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+            </nav>
+            </div>
+    <main>
+        <section class="section__contact">
+            <div class="contact__text">
+                <h1>¡Estamos para vos!</h1>
+                <p>
+                Nos interesa conocerte y saber tu opinión, contenido que te gustaría ver o cambios que harías. 
+                ¡Tu opinión es muy valiosa para nosotros!
+                </p>
+            </div>
+
+            <div class="div__contact__form">
+                <form class="contact__form" action="#">
+                <h2>Contáctanos</h2>
+
+                <label for="nombre">Nombre:</label>
+            <input class="entrada" type="text" id="nombre" name="nombre" placeholder="Jhon Doe" required>
+
+                <label for="email">Email:</label>
+                <input class="entrada" type="email" id="email" name="email" placeholder="tu@correo.com"     required>
+
+                <label for="motivo">Selecciona un motivo:</label>
+                <select class="entrada select" name="motivo" id="motivo">
+                    <option value="mejora">Mejoras</option>
+                    <option value="dudas">Dudas</option>
+                    <option value="errores">Errores</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="mensaje">Dejanos tu mensaje:</label>
+                <textarea class="textarea" name="mensaje" id="mensaje" rows="6" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                
+                <div class="div__btn">
+                    <button type="submit" class="btn-contact">
+                        <i class="fas fa-paper-plane"> Enviar</i>
+                    </button>
+                </div>
+                </form>
+            </div>
+        </section>
+    </main>
     <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
     </script>
