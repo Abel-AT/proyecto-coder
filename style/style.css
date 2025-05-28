@@ -226,66 +226,212 @@
 
 
 /* ---------------------- Footer --------------------- */
-
-.footer {
+.container__footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2em 0;
-    border-top: .2em solid #ffffff83;
-    background: #001d6b28;
+    flex-direction: column;
+    color: #ffffff;
+    background: linear-gradient(to right, #1d3349, #0a1b2c);
+    border-top: 1px solid rgb(129, 129, 129) ;
 }
 
-.ul__footer {
+/* contenido superior */
+
+.container__footer--contact {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: .1em solid rgb(160, 160, 160);
+}
+
+
+/* imagen o logo */
+
+.container__img--footer {
+    height: 12em;
+    width: 12em;
+}
+
+.container__img--footer img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* redes */
+
+.container__redes--footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.container__redes--footer p {
+    font-weight: 500;
+}
+
+.container__redes--footer h5 {
+    padding: .3em;
+    border-bottom: 1px solid rgb(129, 129, 129);
+}
+
+.ul__container--redes {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+
+}
+
+.li__container--redes {
     list-style: none;
-    margin-right: 2em;
 }
 
-.li__footer {
-    list-style: none;
-    padding: 1em;
+.item__redes img {
+    height: 2em;
+    width: 2em;
+    padding: 0;
+    margin: 0;
 }
 
-.a__footer img {
-    width: 2.5em;
-    height: 2.5em;
-}
 
-.text__footer {
-    margin-left: 2em;
+/* sobre nosotros */
+
+.container__nosotros--footer {
+    width: 20em;
     text-align: center;
 }
 
-.instagram:hover {
-    filter: drop-shadow(0 0 10px rgba(255, 105, 135, 0.6));
-    transition: all 0.3s ease;
+.container__nosotros--footer h5 {
+    padding: .3em;
+    border-bottom: 1px solid rgb(129, 129, 129);
 }
 
-.facebook:hover {
-    filter: drop-shadow(0 0px 10px rgb(7, 30, 236));
-    transition: all 0.3s ease;
+.container__nosotros--footer p {
+    font-weight: 500;
+
 }
 
-.linkedin:hover {
-    filter: drop-shadow(0 0px 10px rgba(19, 63, 185, 0.6));
-    transition: all 0.3s ease;
+
+/* copy */
+
+.container__Copy--footer {
+    border-bottom: 1px solid rgb(129, 129, 129);
+}
+
+
+/* contenido inferior */
+
+.container__footer--nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+
+.container__footer--nav h5 {
+    margin: 0;
+    padding: .4em;
+    background-color: #112030;
+    border: 1px solid rgba(161, 161, 161, 0.712);
+    border-top-right-radius: .9em;
+    border-top-left-radius: .9em;
+    border-bottom: none;
+
+}
+
+.ul__container--nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    background-color: #0a1b2c;
+    border: 1px solid rgba(161, 161, 161, 0.712);
+    border-radius: .9em ;
+}
+
+.li__container--nav {
+    list-style: none;
+    margin: 0 1.7em;
+    padding: .5em;
+    border-radius: .9em;
+}
+
+.li__container--nav--icon {
+    list-style: none;
+    font-size: 2rem;
+}
+
+.li__container--nav--icon a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.li__container--nav a {
+    text-decoration: none;
+    color: #dfdcdc;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.li__container--nav a:hover {
+    color: #ffffff;
 }
 
 /* ---------------------- Footer Media --------------------- */
 
-@media (max-width: 786px) {
-    .footer {
-        flex-direction: column;
-    }
-
-    .text__footer {
-        margin: 0;
-    }
+@media (max-width: 768px) {
+.container__footer--contact {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5em 1em;
+    gap: 2em;
 }
+.container__img--footer {
+    height: 8em;
+    width: 8em;
+}
+.container__nosotros--footer {
+    width: 90%;
+}
+.ul__container--redes {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.container__footer--nav h5 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.ul__container--nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+    gap: 1em;
+}
+
+.li__container--nav {
+    margin: 0.5em;
+}
+
+.li__container--nav a {
+    font-size: 1rem;
+}
+
+.li__container--nav--icon {
+    font-size: 1.6rem
+    margin-top: 0.5em;
+}
+
+.container__Copy--footer h6 {
+    font-size: 0.85rem;
+    margin: 1em 0;
+}
+}
+
 
 
 /* ---------------------- Pagina Contacto --------------------- */
