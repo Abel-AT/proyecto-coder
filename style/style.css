@@ -769,6 +769,10 @@ label {
 
 /* ---------------------- apartado de la seccion de rutas --------------------- */
 
+.presentacion__section--rutas {
+    text-align: center;
+}
+
 .presentacion--rutas {
     display: flex;
     flex-direction: column;
@@ -781,12 +785,14 @@ label {
     width: 60%;
     height: 37em;
     margin-top: 2em;
+    border-radius: 24px;
     box-shadow: 0 0 30px 0 rgb(49, 49, 49);
 }
 
 .section__container__img img {
     width: 100%;
     height: 37em;
+    border-radius: 24px;
 }
 
 .section__rutas--map {
@@ -794,7 +800,7 @@ label {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1em;
+    margin: 1em 0;
 }
 
 .container__article {
@@ -814,8 +820,7 @@ label {
 .container__card {
     display: flex;
     align-items: center;
-    width: 80vh;
-    max-width: 800px;
+    max-width: 90em;
     padding: 44px 30px 44px 20px;
     background: #2e2e2e;
     border-radius: 24px;
@@ -859,12 +864,20 @@ label {
 }
 
 .container__card--direction {
-    max-width: 22em;
-    height: 10em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: .5em;
+    max-width: 100%;
+}
+
+.container__card--direction h4 {
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .container__card--direction iframe {
-    width: 100%;
+    max-width: 25em;
     height: 100%;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
@@ -895,6 +908,22 @@ label {
 
     .container__card p {
         max-width: 360px;
+    }
+
+    .container__card--direction {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .container__card--direction iframe {
+        max-width: 12em;
+        height: 10em;
+    }
+
+    .container__article {
+        padding: 2em;
+        width: 100%;
     }
 }
 
