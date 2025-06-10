@@ -1,0 +1,153 @@
+
+/* ---------------------- Footer --------------------- */
+.container__footer {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    background: #01227e28;
+    border-top: 1px solid rgb(129, 129, 129) ;
+}
+
+/* contenido superior */
+
+.container__footer--contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: .1em solid rgb(160, 160, 160);
+}
+
+
+/* imagen o logo */
+
+.container__img--footer {
+    height: 12em;
+    width: 12em;
+}
+
+.container__img--footer img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* redes */
+
+.container__redes--footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.container__redes--footer p {
+    font-weight: 500;
+}
+
+.container__redes--footer h5 {
+    padding: .3em;
+    border-bottom: 1px solid rgb(129, 129, 129);
+}
+
+.ul__container--redes {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+
+}
+
+.li__container--redes {
+    list-style: none;
+}
+
+.item__redes img {
+    height: 2em;
+    width: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* sobre nosotros */
+
+.container__nosotros--footer {
+    width: 20em;
+    text-align: center;
+}
+
+.container__nosotros--footer h5 {
+    padding: .3em;
+    border-bottom: 1px solid rgb(129, 129, 129);
+}
+
+.container__nosotros--footer p {
+    font-weight: 500;
+
+}
+
+
+/* copy */
+
+.container__Copy--footer {
+    border-bottom: 1px solid rgb(129, 129, 129);
+}
+
+
+/* contenido inferior */
+
+.container__footer--nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+
+.container__footer--nav h5 {
+    margin: 0;
+    padding: .4em;
+    background-color: #112030;
+    border: 1px solid rgba(161, 161, 161, 0.712);
+    border-top-right-radius: .9em;
+    border-top-left-radius: .9em;
+    border-bottom: none;
+
+}
+
+.ul__container--nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    background-color: #0a1b2c;
+    border: 1px solid rgba(161, 161, 161, 0.712);
+    border-radius: .9em ;
+}
+
+.li__container--nav {
+    list-style: none;
+    margin: 0 1.7em;
+    padding: .5em;
+    border-radius: .9em;
+}
+
+.li__container--nav--icon {
+    list-style: none;
+    font-size: 2rem;
+}
+
+.li__container--nav--icon a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.li__container--nav a {
+    text-decoration: none;
+    color: #dfdcdc;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.li__container--nav a:hover {
+    color: #ffffff;
+}

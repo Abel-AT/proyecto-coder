@@ -1,0 +1,18 @@
+
+/* ---------------------- WHATSAPP --------------------- */
+
+.whatsapp {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    z-index: 2000;
+}
+
+.img_whatsapp {
+    height: 3em;
+    width: 3em;
+}
+
+.img_whatsapp:hover {
+    filter: drop-shadow(0 0 10px rgba(15, 209, 15, 0.685));
+}

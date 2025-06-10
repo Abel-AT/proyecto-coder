@@ -1,0 +1,56 @@
+
+/* ---------------------- Section Presentacion --------------------- */
+
+.presentacion__section {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.div__presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+}
+
+.text__presentacion {
+    text-align: center;
+}
+
+.text__presentacion h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.text__presentacion h2::after {
+    content: " ?";
+    color: #d4d4d4;
+}
+
+.text__presentacion h2::before {
+    content: "¿ ";
+    color: #d4d4d4;
+}
+
+.text__presentacion p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 1em 0;
+}
+
+.img__presentacion  {
+    max-width: 55em;
+    margin: 1em 0 3.5em 0;
+    border-radius: 0.5em;
+}
+
+.img__presentacion img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 20px 0 #000000;
+    border-radius: 0.5em;
+}
+

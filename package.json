@@ -1,0 +1,22 @@
+{
+  "name": "proyecto-coder",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Abel-AT/proyecto-coder#readme",
+  "bugs": {
+    "url": "https://github.com/Abel-AT/proyecto-coder/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abel-AT/proyecto-coder.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  }
+}

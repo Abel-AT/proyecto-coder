@@ -1,0 +1,184 @@
+/* ---------------------- Header Media --------------------- */
+
+@media (max-width: 786px) {
+    .header__index {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 681px) {
+    .header__nav--ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__nav--li {
+        border-right: none;
+    }
+}
+
+
+@media (max-width: 690px) {
+    .header__index {
+        display: none;
+    }
+
+    .header {
+        display: none;
+    }
+}
+
+
+/* ---------------------- Footer Media --------------------- */
+
+@media (max-width: 768px) {
+    .container__footer--contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5em 1em;
+        gap: 2em;
+    }
+    .container__img--footer {
+        height: 8em;
+        width: 8em;
+    }
+    .container__nosotros--footer {
+        width: 90%;
+    }
+    .ul__container--redes {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5em;
+    }
+    
+    .container__footer--nav h5 {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .ul__container--nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1em;
+        gap: 1em;
+    }
+    
+    .li__container--nav {
+        margin: 0.5em;
+    }
+    
+    .li__container--nav a {
+        font-size: 1rem;
+    }
+    
+    .li__container--nav--icon {
+        font-size: 1.6rem;
+        margin-top: 0.5em;
+    }
+    
+    .container__Copy--footer h6 {
+        font-size: 0.85rem;
+        margin: 1em 0;
+    }
+    }
+    
+/* ---------------------- Contacto Media --------------------- */
+    
+@media (max-width: 600px) {
+    .contact__text h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact__text p {
+        font-size: 1rem;
+    }
+
+    .contact__form h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-contact {
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+}
+
+/* ---------------------- bootstrap HEADER media --------------------- */
+
+@media (min-width: 690px) {
+    #container__navbar-bt {
+        position: absolute;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        display: none;
+    }
+}
+
+
+/* ---------------------- Rutas Media --------------------- */
+@media (width <= 910px) {
+    .container__card {
+        margin: 80px 20px 0 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 60px;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+    .container__card h2 {
+        margin-right: 0;
+        font-size: 26px;
+    }
+    .container__card img {
+        margin: -100px 0 30px 0;
+        width: 100%;
+        max-width: 1000px;
+        height: 250px;
+    }
+    .container__card p {
+        max-width: 360px;
+    }
+    .container__card--direction {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+    .container__card--direction iframe {
+        max-width: 30em;
+        height: 10em;
+    }
+    .container__article {
+        padding: 2em;
+        width: 100%;
+    }
+}
+@media (width <= 560px) {
+    .container__card img {
+        height: 50vw;
+        width: 50vw;
+        border: 12px solid var(--container__card);
+        margin: -140px 0 30px 0;
+    }
+    .section__container__img {
+        width: 90%;
+        height: 15em;
+    }
+    .section__container__img img {
+        width: 100%;
+        height: 15em;
+    }
+.container__card--direction iframe {
+    max-width: 18em;
+    height: 10em;
+    }
+}
