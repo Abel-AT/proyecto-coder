@@ -14,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(1, 34, 126, 0.1568627451);
+  background: rgba(116, 117, 117, 0.1568627451);
 }
 
 /* ---------------------- Header Nav --------------------- */
@@ -69,7 +69,6 @@
   height: 5em;
 }
 
-/** donde domer **/
 * {
   margin: 0;
   padding: 0;
@@ -962,7 +961,7 @@ label {
   --bs-tertiary-color: rgba(33, 37, 41, 0.5);
   --bs-tertiary-color-rgb: 33, 37, 41;
   --bs-tertiary-bg: #f8f9fa;
-  --bs-tertiary-bg-rgb: #444 !important;
+  --bs-tertiary-bg-rgb: 248, 249, 250;
   --bs-heading-color: inherit;
   --bs-link-color: #0d6efd;
   --bs-link-color-rgb: 13, 110, 253;
@@ -4828,7 +4827,7 @@ textarea.form-control-lg {
   font-size: var(--bs-navbar-toggler-font-size);
   line-height: 1;
   color: var(--bs-navbar-color);
-  background-color: #ff1126ef !important;
+  background-color: transparent;
   border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
   border-radius: var(--bs-navbar-toggler-border-radius);
   transition: var(--bs-navbar-toggler-transition);
@@ -12883,17 +12882,6 @@ textarea.form-control-lg {
     height: 10em;
   }
 }
-:root {
-  --bg-dark: #111;
-  --card-dark: #1f1f1f;
-  --text-light: #eee;
-  --text-muted: #aaa;
-  --accent: #38c7ac;
-  --shadow-dark: 0 10px 30px rgba(0, 0, 0, 0.7);
-  --radius: 20px;
-  --transition: 0.4s ease;
-}
-
 .donde-comer {
   background: var(--bg-dark);
   color: var(--text-light);
@@ -12927,7 +12915,7 @@ textarea.form-control-lg {
   border-radius: var(--radius);
   box-shadow: var(--shadow-dark);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   transition: background var(--transition);
 }
 .donde-comer .nav-lugares a:hover {
@@ -12936,8 +12924,12 @@ textarea.form-control-lg {
 }
 
 .lugar {
-  width: 95%;
-  margin: 0 auto 4rem;
+  width: 100%;
+  margin: auto;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.2666666667);
+  border-radius: 24px;
+  box-shadow: 0 0 20px 0 #000000;
 }
 .lugar .hero {
   position: relative;
@@ -12947,9 +12939,9 @@ textarea.form-control-lg {
   overflow: hidden;
   transition: transform var(--transition), box-shadow var(--transition);
   margin: 0 auto 2rem;
-  width: 90%;
+  width: 95%;
   max-width: 1000px;
-  height: clamp(300px, 45vw, 500px);
+  height: clamp(350px, 45vw, 500px);
 }
 .lugar .hero img {
   width: 100%;
@@ -12980,23 +12972,24 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 .lugar .info .img-box {
-  flex: 1 1 300px;
+  flex: 1 0 300px;
   background: var(--card-dark);
   border-radius: var(--radius);
   box-shadow: var(--shadow-dark);
   overflow: hidden;
   transition: transform var(--transition), box-shadow var(--transition);
+  margin: 1.5em;
 }
 .lugar .info .img-box img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
 }
 .lugar .info .desc {
-  flex: 2 1 400px;
+  flex: 1 1 500px;
   background: var(--card-dark);
   border-radius: var(--radius);
   box-shadow: var(--shadow-dark);
@@ -13005,6 +12998,7 @@ textarea.form-control-lg {
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  margin: 1.5em;
 }
 .lugar .info .desc h3 {
   font-size: 2rem;
@@ -13040,12 +13034,13 @@ textarea.form-control-lg {
     flex: 1 1 100%;
   }
 }
+/** variables section comida **/
 :root {
   --bg-dark: #111;
   --card-dark: #1f1f1f;
   --text-light: #eee;
   --text-muted: #aaa;
-  --accent: #38c7ac;
+  --accent: #da1e17;
   --shadow-dark: 0 10px 30px rgba(0, 0, 0, 0.7);
   --radius: 20px;
   --transition: 0.4s ease;
