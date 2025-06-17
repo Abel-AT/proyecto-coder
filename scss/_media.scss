@@ -182,3 +182,39 @@
     height: 10em;
     }
 }
+
+/* ---------------------- noticias repuestos --------------------- */
+
+@media (max-width: 600px) {
+    .section__container--repuestos {
+        padding: 2rem 1rem;
+    }
+
+    .repuestos__title {
+        font-size: 1.6rem;
+    }
+
+    .repuestos__intro,
+    .repuestos__outro {
+        font-size: 0.9rem;
+    }
+
+    .repuestos__list {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+    }
+
+    .repuestos__item {
+        max-width: 220px;
+    }
+
+    .repuestos__img {
+        height: 120px;
+    }
+
+    .repuestos__caption {
+        font-size: 0.85rem;
+        padding: 0.8rem;
+    }
+}
+
