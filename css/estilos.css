@@ -13032,6 +13032,121 @@ textarea.form-control-lg {
   color: #111;
 }
 
+.lugar {
+  width: 100%;
+  margin: 1em auto;
+  background-color: rgba(0, 0, 0, 0.0549019608);
+  border-radius: 24px;
+  box-shadow: 0 0 20px 0 #575757;
+}
+.lugar .hero {
+  position: relative;
+  background: var(--card-dark);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-dark);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+  margin: 0 auto 2rem;
+  width: 95%;
+  max-width: 1000px;
+  height: clamp(350px, 45vw, 500px);
+  box-shadow: 0 0 20px 0 #000000;
+}
+.lugar .hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+  transition: filter var(--transition);
+}
+.lugar .hero:hover img {
+  filter: brightness(1);
+}
+.lugar .hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+.lugar .hero h2 {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: #fff;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  mix-blend-mode: difference;
+  z-index: 2;
+}
+.lugar .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.lugar .info .img-box {
+  min-width: 250px;
+  width: 40%;
+  background: var(--card-dark);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-dark);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+  margin: 1.5em;
+}
+.lugar .info .img-box img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.lugar .info .desc {
+  min-width: 300px;
+  max-width: 500px;
+  height: 40em;
+  background: var(--card-dark);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-dark);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em;
+}
+.lugar .info .desc h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+.lugar .info .desc p {
+  flex-grow: 1;
+  color: var(--text-muted);
+}
+.lugar .info .desc .details {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+.lugar .info .desc .mapa {
+  margin-top: auto;
+}
+.lugar .info .desc .mapa iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-dark);
+}
+
+@media (max-width: 768px) {
+  .lugar .info {
+    width: 100%;
+    flex-direction: column;
+  }
+  .lugar .info .img-box,
+  .lugar .info .desc {
+    flex: 1 1 100%;
+  }
+}
 /** variables section comida **/
 :root {
   --bg-dark: #111;
@@ -13156,7 +13271,7 @@ textarea.form-control-lg {
 }
 
 .lugar {
-  width: 90%;
+  width: 100%;
   margin: 1em auto;
   padding: 1em;
   background-color: rgba(0, 0, 0, 0.0549019608);
@@ -13223,7 +13338,7 @@ textarea.form-control-lg {
   object-fit: cover;
 }
 .lugar .info .desc {
-  min-width: 280px;
+  min-width: 300px;
   max-width: 500px;
   height: 40em;
   background: var(--card-dark);
@@ -13259,6 +13374,14 @@ textarea.form-control-lg {
   border: none;
   border-radius: var(--radius);
   box-shadow: var(--shadow-dark);
+}
+
+.redes_repuestos a {
+  margin: 0 0.5em;
+}
+.redes_repuestos a .redes_repu {
+  width: 3em;
+  height: 3em;
 }
 
 @media (max-width: 768px) {

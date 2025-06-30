@@ -245,6 +245,17 @@
     }
 }
 
+.redes_repuestos {
+    a {
+        margin: 0 .5em;
+        .redes_repu {
+            width: 3em;
+            height: 3em;
+        }
+    }
+}
+
+
 @media (max-width: 768px) {
     .lugar .info {
         flex-direction: column;
