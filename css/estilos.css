@@ -138,7 +138,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .text__presentacion {
@@ -638,16 +638,30 @@ label {
   cursor: pointer;
 }
 
+.presentacion__section--rutas h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  color: #ff4c60;
+  text-align: center;
+}
+
 .presentacion__section--rutas {
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   text-align: center;
   color: #f0f0f0;
 }
-.presentacion__section--rutas h1 {
-  font-size: clamp(1.8rem, 1.5vw, 3.2rem);
-  font-weight: 700;
-  letter-spacing: 1.2px;
-  margin-bottom: 2rem;
+.presentacion__section--rutas h2 {
+  font-size: clamp(1.5rem, 1.5vw, 2.2rem);
+  color: #ff4c60;
+  margin-top: 2rem;
+}
+.presentacion__section--rutas p {
+  color: #b0b0b0;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
 }
 
 .presentacion--rutas {
@@ -693,6 +707,11 @@ label {
   margin-top: 2em;
   margin-bottom: 2em;
 }
+.section__rutas--map.alt-bg {
+  background: linear-gradient(135deg, #181818, #2b2b2b);
+  border-radius: 20px;
+  padding: 2rem;
+}
 
 .container__article {
   display: grid;
@@ -710,17 +729,35 @@ label {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   border-radius: 20px;
-  transition: box-shadow 0.4s ease;
+  transition: box-shadow 0.4s ease, transform 0.3s ease-in-out;
+  position: relative;
+  isolation: isolate;
+  backdrop-filter: blur(4px);
 }
 .container__card:hover, .container__card:focus-within {
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
 }
 .container__card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
-  transition: none;
+  transition: transform 0.3s ease-in-out;
+}
+.container__card img:hover {
+  transform: scale(1.03);
+}
+.container__card .card-info {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: #ff4c60;
+  font-weight: 600;
 }
 
 .container__card .card-content {
@@ -764,6 +801,7 @@ label {
   color: #f0f0f0;
   margin: 0;
   flex: 1 1 150px;
+  text-align: center;
 }
 .container__card--direction iframe {
   flex: 2 1 320px;
@@ -775,6 +813,34 @@ label {
 }
 .container__card--direction iframe:hover, .container__card--direction iframe:focus {
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.7);
+}
+
+.cta-final {
+  padding: 2rem 2rem;
+  text-align: center;
+  background: #1a1a1a;
+  border-radius: 20px;
+}
+.cta-final h2 {
+  font-size: 2.4rem;
+  color: #ff4c60;
+  margin-bottom: 1rem;
+}
+.cta-final p {
+  color: #b0b0b0;
+  margin-bottom: 2rem;
+}
+.cta-final .btn-cta {
+  background: #ff4c60;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease-in-out;
+}
+.cta-final .btn-cta:hover {
+  background: rgb(255, 25, 50.6983240223);
 }
 
 @media (max-width: 900px) {
@@ -806,6 +872,9 @@ label {
   .container__card--direction h4 {
     flex: 1 1 100%;
     text-align: center;
+  }
+  .container__card--direction iframe {
+    height: 250px;
   }
 }
 .seccion__contenido-web {
@@ -12909,7 +12978,6 @@ textarea.form-control-lg {
 /* ---------------------- Rutas Media --------------------- */
 @media (width <= 910px) {
   .container__card {
-    margin: 80px 20px 0 20px;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 60px;
@@ -12922,10 +12990,8 @@ textarea.form-control-lg {
     font-size: 26px;
   }
   .container__card img {
-    margin: -100px 0 30px 0;
     width: 100%;
     max-width: 1000px;
-    height: 250px;
   }
   .container__card p {
     max-width: 360px;
@@ -12949,7 +13015,6 @@ textarea.form-control-lg {
     height: 50vw;
     width: 50vw;
     border: 12px solid var(--container__card);
-    margin: -140px 0 30px 0;
   }
   .section__container__img {
     width: 90%;
